@@ -46,18 +46,22 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="分类">
-<meta property="og:url" content="http://number1508.github.io/categories/index.html">
+  <meta name="description" content="安装交叉编译工具链1.linux下安装软件的方法 在线安装。譬如ubuntu中使用apt-get install vim来安装vim软件。 自己下载安装包来安装。这种方式的缺陷就是你不知道你下载的安装包和你的系统是否匹配。 源代码安装。  总结：安装交叉编译工具链（arm-linux-gcc）实际采用第二种安装方式 2.交叉编译工具链的安装 打开虚拟机，在&#x2F;usr&#x2F;local&#x2F;下创建&#x2F;us">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linux裸机_GPIOandLED">
+<meta property="og:url" content="http://number1508.github.io/2020/03/04/GPIOandLED/index.html">
 <meta property="og:site_name" content="SDH的博客">
+<meta property="og:description" content="安装交叉编译工具链1.linux下安装软件的方法 在线安装。譬如ubuntu中使用apt-get install vim来安装vim软件。 自己下载安装包来安装。这种方式的缺陷就是你不知道你下载的安装包和你的系统是否匹配。 源代码安装。  总结：安装交叉编译工具链（arm-linux-gcc）实际采用第二种安装方式 2.交叉编译工具链的安装 打开虚拟机，在&#x2F;usr&#x2F;local&#x2F;下创建&#x2F;us">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-01-24T07:18:31.000Z">
-<meta property="article:modified_time" content="2020-01-24T07:19:26.706Z">
+<meta property="og:image" content="http://number1508.github.io/2020/03/04/GPIOandLED/1E0019F4364F4E3896558E902D130FF1">
+<meta property="article:published_time" content="2020-03-04T14:13:19.000Z">
+<meta property="article:modified_time" content="2020-03-04T14:15:07.783Z">
 <meta property="article:author" content="number1508">
 <meta property="article:tag" content="嵌入式 Linux NXP">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://number1508.github.io/2020/03/04/GPIOandLED/1E0019F4364F4E3896558E902D130FF1">
 
-<link rel="canonical" href="http://number1508.github.io/categories/">
+<link rel="canonical" href="http://number1508.github.io/2020/03/04/GPIOandLED/">
 
 
 <script id="page-configurations">
@@ -65,12 +69,11 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false
+    isPost: true
   };
 </script>
 
-  <title>分类 | SDH的博客
-  </title>
+  <title>linux裸机_GPIOandLED | SDH的博客</title>
   
 
 
@@ -202,52 +205,133 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
           <div class="content">
             
 
   <div class="posts-expand">
-    
-    
-    
-    <div class="post-block" lang="zh-CN">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://number1508.github.io/2020/03/04/GPIOandLED/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar-1.jpg">
+      <meta itemprop="name" content="number1508">
+      <meta itemprop="description" content="爱好硬件电子、软件、音乐、运动">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SDH的博客">
+    </span>
       <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          linux裸机_GPIOandLED
+        </h1>
 
-<h1 class="post-title" itemprop="name headline">分类
-</h1>
+        <div class="post-meta">
 
-<div class="post-meta">
+        
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-03-04 22:13:19 / 修改时间：22:15:07" itemprop="dateCreated datePublished" datetime="2020-03-04T22:13:19+08:00">2020-03-04</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%9F%A5%E8%AF%86%E3%80%81%E6%8A%80%E8%83%BD/" itemprop="url" rel="index">
+                    <span itemprop="name">知识、技能</span>
+                  </a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <a id="more"></a>   
+<h1 id="安装交叉编译工具链"><a href="#安装交叉编译工具链" class="headerlink" title="安装交叉编译工具链"></a>安装交叉编译工具链</h1><h2 id="1-linux下安装软件的方法"><a href="#1-linux下安装软件的方法" class="headerlink" title="1.linux下安装软件的方法"></a>1.linux下安装软件的方法</h2><ul>
+<li>在线安装。譬如ubuntu中使用apt-get install vim来安装vim软件。</li>
+<li>自己下载安装包来安装。这种方式的缺陷就是你不知道你下载的安装包和你的系统是否匹配。</li>
+<li>源代码安装。</li>
+</ul>
+<p><strong>总结：安装交叉编译工具链（arm-linux-gcc）实际采用第二种安装方式</strong></p>
+<h2 id="2-交叉编译工具链的安装"><a href="#2-交叉编译工具链的安装" class="headerlink" title="2.交叉编译工具链的安装"></a>2.交叉编译工具链的安装</h2><ol>
+<li>打开虚拟机，在<code>/usr/local/</code>下创建<code>/usr/local/arm</code>文件夹</li>
+<li>先将安装包从Windows中弄到linux中去。可以用共享文件夹，也可以用Samba，也可以cuteftp。</li>
+<li>解压。<code>tar -jxvf arm-2009q3.tar.bz2</code></li>
+</ol>
+<p>应用程序在解压出来的文件中，安装在/usr/local/arm/arm-2009q3/bin目录下。</p>
+<ul>
+<li>注：linux中的目录管理方法。技术角度来讲，linux中所有目录性质都是一样的，所以技术角度来讲我们把软件安装到哪里都行。但是因为如果胡乱放置，将来程序可能不好找。所以久而久之大家就总结了一个文件放置的一般定义，譬如说/bin目录放置一些系统自带的用户使用的应用程序，/sbin目录下存放的是系统自带的系统管理方面的应用程序。<br>那我们装软件放在哪里？一般都在/usr目录下。我们安装arm-linux-gcc，就在/usr/local/底下创建一个arm文件夹，然后装到里面。<h2 id="3-安装后的测试"><a href="#3-安装后的测试" class="headerlink" title="3.安装后的测试"></a>3.安装后的测试</h2></li>
+</ul>
+<ol>
+<li>到真正的应用程序的安装目录下（也就是/usr/local/arm/arm-2009q3/bin），去执行arm-linux-gcc -v</li>
+<li>执行方法是：<code>./arm-none-linux-gnueabi-gcc -v</code></li>
+<li>执行后可以得到一长串输出，其中有<strong>“gcc version 4.4.1”</strong>字样，即表示安装成功。</li>
+</ol>
+<ul>
+<li>但是此时只能在应用程序目录下执行应用程序或者在别处执行时需要写入完整的应用程序路径<code>/usr/local/arm/arm-2009q3/bin/arm-none-linux-gnueabi-gcc-v</code>比较繁琐，所以下面引入环境变量<h2 id="4-将工具链导出到环境变量"><a href="#4-将工具链导出到环境变量" class="headerlink" title="4.将工具链导出到环境变量"></a>4.将工具链导出到环境变量</h2></li>
+<li>环境变量的意义<ul>
+<li>环境变量就是操作系统的全局变量。每一个环境变量对操作系统来说都是唯一的，名字和所代表的意义都是唯一的。linux系统可以有很多个环境变量。其中有一部分是linux系统自带的，还有一些是我们自己来扩充的。我们这里涉及到的一个环境变量是PATH。PATH这个环境变量是系统自带的，它的含义就是系统在查找可执行程序时会搜索的路径范围。（此时在任意路径直接执行<code>arm-none-linux-gnueabi-gcc -v</code>都可以了）</li>
+<li>在终端中输入<code>export PATH=/usr/local/arm/arm-2009q3/bin:$PATH</code>,将工具链导出到环境变量</li>
+<li>但是此时只要关掉这个终端再另外打开一个立马就不行了。原因是我们本次终端中执行时的操作只是针对本终端，以后再打开的终端并未被执行过这个命令所以没导出。</li>
+</ul>
+</li>
+<li>解决方案是在~/.bashrc中，添加<code>export PATH=/usr/local/arm/arm-2009q3/bin:$PATH</code>即可。</li>
+<li><img src="1E0019F4364F4E3896558E902D130FF1" alt="image">添加成功如图<h2 id="5-为工具链创建arm-linux-xxx符号链接"><a href="#5-为工具链创建arm-linux-xxx符号链接" class="headerlink" title="5.为工具链创建arm-linux-xxx符号链接"></a>5.为工具链创建arm-linux-xxx符号链接</h2></li>
+<li>终端中输入    <code>ln arm-none-linux-gnueabi-addr2line -s arm-linux-addr2line</code>，即可通过<code>arm-linux-addr2line</code>访问<code>ln arm-none-linux-gnueabi-addr2line</code></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/02/11/Linux-C/" rel="prev" title="Linux-C学习笔记">
+      <i class="fa fa-chevron-left"></i> Linux-C学习笔记
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-          <div class="category-all-page">
-            <div class="category-all-title">
-              目前共计 2 个分类
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%9F%A5%E8%AF%86%E3%80%81%E6%8A%80%E8%83%BD/">知识、技能</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9F%B3%E4%B9%90%E3%80%81%E7%94%9F%E6%B4%BB/">音乐、生活</a><span class="category-list-count">1</span></li></ul>
-            </div>
-          </div>
-        
-      </div>
-      
-      
-      
-    </div>
-    
-
-    
-    
-    
   </div>
 
 
@@ -299,6 +383,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安装交叉编译工具链"><span class="nav-number">1.</span> <span class="nav-text">安装交叉编译工具链</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-linux下安装软件的方法"><span class="nav-number">1.1.</span> <span class="nav-text">1.linux下安装软件的方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-交叉编译工具链的安装"><span class="nav-number">1.2.</span> <span class="nav-text">2.交叉编译工具链的安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-安装后的测试"><span class="nav-number">1.3.</span> <span class="nav-text">3.安装后的测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-将工具链导出到环境变量"><span class="nav-number">1.4.</span> <span class="nav-text">4.将工具链导出到环境变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-为工具链创建arm-linux-xxx符号链接"><span class="nav-number">1.5.</span> <span class="nav-text">5.为工具链创建arm-linux-xxx符号链接</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
